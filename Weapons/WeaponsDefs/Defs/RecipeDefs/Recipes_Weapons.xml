@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+
+	<RecipeDef>
+		<defName>makeGreatSwordWood</defName>
+		<label>Make Greatsword Wood</label>
+		<description>Makes a two handed sword for melee combat out of Wood</description>
+		<jobString>Making Greatsword Wood</jobString>
+		<workAmount>300</workAmount>
+		<workSpeedStat>GreatSwordCraftingSpeed</workSpeedStat>
+		<skillrequrirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillrequrirements>
+		<effectWorking>Repair</effectWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Wood</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<FixedIngreditentFilter>
+			<thingDefs>
+				<li>Wood</li>
+			</thingDefs>
+		</FixedIngreditentFilter>
+		<products>
+			<WeaponParts>1</WeaponParts>
+		</products>
+		<WorkSkill>Crafting</WorkSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>makeGreatSwordSteel</defName>
+		<label>Make Greatsword Steel</label>
+		<description>Makes a two handed sword for melee combat out of Steel</description>
+		<jobString>Making Greatsword Steel</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>GreatSwordCraftingSpeed</workSpeedStat>
+		<skillrequrirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>4</minLevel>
+			</li>
+		</skillrequrirements>
+		<effectWorking>Repair</effectWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<FixedIngreditentFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</FixedIngreditentFilter>
+		<products>
+			<WeaponParts>1</WeaponParts>
+		</products>
+		<WorkSkill>Crafting</WorkSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>makeGreatSwordPlasteel</defName>
+		<label>Make Greatsword Plasteel</label>
+		<description>Makes a two handed sword for melee combat out of Plasteel</description>
+		<jobString>Making Greatsword Plasteel</jobString>
+		<workAmount>800</workAmount>
+		<workSpeedStat>GreatSwordCraftingSpeed</workSpeedStat>
+		<skillrequrirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>9</minLevel>
+			</li>
+		</skillrequrirements>
+		<effectWorking>Repair</effectWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<FixedIngreditentFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+			</thingDefs>
+		</FixedIngreditentFilter>
+		<products>
+			<WeaponParts>1</WeaponParts>
+		</products>
+		<WorkSkill>Crafting</WorkSkill>
+	</RecipeDef>
+
+</RecipeDefs>
+

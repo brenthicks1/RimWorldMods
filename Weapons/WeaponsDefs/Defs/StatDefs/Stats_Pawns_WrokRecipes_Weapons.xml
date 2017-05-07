@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StatDefs>
+
+	<StatDef>
+		<defName>GreatSwordCraftingSpeed</defName>
+		<label>GreatSword Crafting Speed</label>
+		<description>Crafting speed that a pawn can create this item</description>
+		<category>PawnWork</category>
+		<defaultBaseValue>1</defaultBaseValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<statFactors
+			<li>WorkSpeedGlobal</li>
+		</statFactors>
+		<skillNeedFactors>
+			<li Class="SkillNeed_BaseBonus">
+				<skill>Crafting</skill>
+				<baseFactor>.05</baseFactor>
+				<bonusFactor>.05</bonusFactor>
+			</li>
+		</skillNeedFactors>
+		<capacityFactors>
+			<li>
+				<capacity>Consciousness</capacity>
+				<weight>1.5</weight>
+			</li>
+		</capacityFactors>	
+	</StatDef>	
+</StatDefs>

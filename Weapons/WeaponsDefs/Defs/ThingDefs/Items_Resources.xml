@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+	<ThingDef name="ResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<label>Not sure yet</label>
+		<category></category>
+		<resourceReadoutPriority></resourceReadoutPriority>
+		<useHitPoints>True</useHitPoints>
+		<selectable>True</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		 <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+</Resources>	

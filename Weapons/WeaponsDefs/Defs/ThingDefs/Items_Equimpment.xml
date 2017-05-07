@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+	<ThingDef Name="GreatSwordWoodWeapon" Abstract="True">
+		<category>Item</category>
+		<thingClass>ThingWithComps</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<pathCost>0</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<selectable>True</selectable>
+		<graphicOnGroundRandomRotateAngle>30</graphicOnGroundRandomRotateAngle>
+		<drawGUIOVerlay>True</drawGUIOVerlay>
+		<statBase>
+			<MixHitPoints>20</MixHitPoints>
+		</statBase>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Neolithic</techLevel>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li>
+				<compClass>CompQaulity</compClass>
+			</li>
+			<li>
+				<compClass>CompArt</compClass>
+				<nameMaker>NamerGreatSwordWood</nameMaker>
+				<descriptionMaker>ArtGreatSwordWood</descriptionMaker>
+				<minQualityForArtistic>Poor</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDefs>
+	<ThingDef Name="GreatSwordSteelWeapon" Abstract="True">
+		<category>Item</category>
+		<thingClass>ThingWithComps</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<pathCost>0</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<selectable>True</selectable>
+		<graphicOnGroundRandomRotateAngle>30</graphicOnGroundRandomRotateAngle>
+		<drawGUIOVerlay>True</drawGUIOVerlay>
+		<statBase>
+			<MixHitPoints>40</MixHitPoints>
+		</statBase>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Medieval</techLevel>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li>
+				<compClass>CompQaulity</compClass>
+			</li>
+			<li>
+				<compClass>CompArt</compClass>
+				<nameMaker>NamerGreatSwordSteel</nameMaker>
+				<descriptionMaker>ArtGreatSwordSteel</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="GreatSwordPlasteelWeapon" Abstract="True">
+		<category>Item</category>
+		<thingClass>ThingWithComps</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<pathCost>0</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<selectable>True</selectable>
+		<graphicOnGroundRandomRotateAngle>30</graphicOnGroundRandomRotateAngle>
+		<drawGUIOVerlay>True</drawGUIOVerlay>
+		<statBase>
+			<MixHitPoints>100</MixHitPoints>
+		</statBase>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li>
+				<compClass>CompQaulity</compClass>
+			</li>
+			<li>
+				<compClass>CompArt</compClass>
+				<nameMaker>NamerGreatSwordPlasteel</nameMaker>
+				<descriptionMaker>ArtGreatSwordPlasteel</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+			<ThingDef ParentName = "GreatSwordWoodWeapon">
+				<defName>GreatswordWood</defName>
+				<label>Greatsword Wood</label>
+				<description>Large two handed sword made of wood</description>
+				<graphicClass>Grapic_Single</graphicClass>
+				<graphicPath></graphicPath>
+				<statBase>
+					<MarketValue>50</MarketValue>
+					<MeleeHitChance>.85</MeleeHitChance>
+					<mass>1.5</mass>
+					<MeleeWeapon_DamageAmount>20</MeleeWeapon_DamageAmount>
+					<MeleeWeapon_Cooldown>0.25</MeleeWeapon_Cooldown>
+				</statBase>
+				<verbs>
+					<li>
+						<verbClass>Verb_MeleeAttack</verbClass>
+						<hasStandarCommand>true</hasStandarCommand>
+						<meleeDamageDef>GreatSwordMeleeWood</meleeDamageDef>
+						<minRange>2</minRange>
+					</li>
+				</verbs>
+			</ThingDef>
+
+			<ThingDef ParentName = "GreatSwordSteelWeapon">
+				<defName>GreatswordSteel</defName>
+				<label>Greatsword Steel</label>
+				<description>Large two handed sword made of Steel</description>
+				<graphicClass>Grapic_Single</graphicClass>
+				<graphicPath></graphicPath>
+				<statBase>
+					<MarketValue>200</MarketValue>
+					<MeleeHitChance>.90</MeleeHitChance>
+					<Mass>2.0</Mass>
+					<MeleeWeapon_DamageAmount>50</MeleeWeapon_DamageAmount>
+					<MeleeWeapon_Cooldown>0.25</MeleeWeapon_Cooldown>
+				</statBase>
+				<verbs>
+					<li>
+						<verbClass>Verb_MeleeAttack</verbClass>
+						<hasStandarCommand>true</hasStandarCommand>
+						<meleeDamageDef>GreatSwordMeleeSteel</meleeDamageDef>
+						<minRange>2</minRange>
+					</li>
+				</verbs>
+			</ThingDef>
+
+			<ThingDef ParentName = "GreatSwordPlasteelWeapon">
+				<defName>GreatswordPlasteel</defName>
+				<label>Greatsword Plasteel</label>
+				<description>Large two handed sword made of Plasteel</description>
+				<graphicClass>Grapic_Single</graphicClass>
+				<graphicPath></graphicPath>
+				<statBase>
+					<MarketValue>1500</MarketValue>
+					<MeleeHitChance>.90</MeleeHitChance>
+					<Mass>2.5</Mass>
+					<MeleeWeapon_DamageAmount>150</MeleeWeapon_DamageAmount>
+					<MeleeWeapon_Cooldown>0.25</MeleeWeapon_Cooldown>
+				</statBase>
+				<verbs>
+					<li>
+						<verbClass>Verb_MeleeAttack</verbClass>
+						<hasStandarCommand>true</hasStandarCommand>
+						<meleeDamageDef>GreatSwordMeleePlasteel</meleeDamageDef>
+						<minRange>2</minRange>
+					</li>
+				</verbs>
+			</ThingDef>
+	<!-- ==============================================================================-->
+</ThingDefs>	
