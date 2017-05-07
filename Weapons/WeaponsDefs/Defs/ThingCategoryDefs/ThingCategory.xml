@@ -1,0 +1,12 @@
+<?xml version="1.0" endcoding="utf-8">
+<ThingCategoryDefs>
+
+
+	<ThingCategoryDef>
+		<defName>Security</defName>
+		<defLabel>security</defLabel>
+		<parent>Manufactured</parent>
+		<iconPath>Ui/Icon/ThingCategories/Manufactured</iconPath>
+	</ThingCategoryDef
+
+</ThingCategoryDef>
